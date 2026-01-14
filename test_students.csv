@@ -1,9 +1,9 @@
-name,email,income,absences,risk,study_time,distance,parent_edu
-"Juan Dela Cruz","juan@univ.edu",8500,14,78,8,15,1
-"Maria Santos","maria@univ.edu",28000,2,12,25,2,4
-"Kevin Lee","kevin@univ.edu",14500,6,32,12,8,2
-"Elena Ramos","elena@univ.edu",9200,18,85,5,22,1
-"Marcus Chen","marcus@univ.edu",45000,1,5,30,3,5
-"Sofia Vergara","sofia@univ.edu",12000,10,55,10,12,2
-"Antonio Luna","antonio@univ.edu",7500,22,92,4,25,1
-"Clara Garcia","clara@univ.edu",32000,3,15,22,5,3
+name,email,income,absences,studyTime,distance,parentEdu,householdSize,techAccess,scholarship,screenTime,sleepHours
+"Go, Shaliyah Ily B.",go.si.bsinfotech@gmail.com,50000,5,35,1.7,4,4,1,0,10,9
+"Pedrealba, Miguel A.",pedrealbamiguel@gmail.com,18000,8,80,15.0,4,7,1,1,12,6
+"Baron, Mary Ann D.",baron.m.bsinfotech@gmail.com,22500,8,27,1.0,2,6,1,1,7,7
+"Tambis, Jefferson B.",tambis.j.bsinfotech@gmail.com,13000,0,2,8.0,2,7,1,0,8,10
+"Adona, Andrei Joshua  A.",adona.aj.bsinfotech@gmail.com,12000,5,14,38.0,2,4,1,0,10,6
+"Magpayo, Aironn Paul M.",yaoimagpayo@gmail.com,40000,3,1,10.0,4,5,1,0,12,7
+"Siupan, Ivan S.",siupanivan407@gmail.com,20000,7,5,8.0,2,5,1,0,7,7
+"Racraquin, John Michael G.",racraquin.jm.bsinfotech@gmail.com,0,0,0,0.0,4,4,1,1,8,7

@@ -29,6 +29,38 @@ class LoginRequest(BaseModel):
     password: str
     role: str
 
+class StudentProfile(BaseModel):
+    income: int
+    absences: int
+    grades: float
+
+@app.post("/generate-intervention")
+async def generate_intervention(profile: StudentProfile):
+    """
+    Generates a personalized intervention plan based on risk factors.
+    Used by the Teacher Portal.
+    """
+    interventions = []
+    
+    if profile.income < 15000:
+        interventions.append({
+            "type": "financial",
+            "action": "Tertiary Education Subsidy Application",
+            "priority": "High"
+        })
+    
+    if profile.absences > 5:
+        interventions.append({
+            "type": "behavioral",
+            "action": "Schedule Guidance Counseling - Attendance",
+            "priority": "Medium"
+        })
+        
+    if not interventions:
+        return {"status": "Clean", "message": "Student is on track."}
+        
+    return {"status": "Action Required", "interventions": interventions}
+
 def get_strategic_solution(row, is_at_risk):
     if not is_at_risk:
         return "Maintain current habits. Join peer tutoring to excel further."
